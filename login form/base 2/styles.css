@@ -6,19 +6,25 @@ select {
 }
 
 form {
+    display: grid;
+    gap: 1rem;
 
+    @media (width > 720px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .form-group {
-
+    display: grid;
 }
 
 input {
-  background: var(--surface-2);
+  background: var(--accent);
   color: var(--text-1);
   border: var(--border);
   border-radius: 16px;
   padding: 1ex 2ex;
+  width: 100%;
 }
 
 /* general styling */
