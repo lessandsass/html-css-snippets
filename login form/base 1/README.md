@@ -1,0 +1,3 @@
+- In this project you could either use the form or the modal to login.
+- if the form part was commeted out then the modal will be used to login.
+- or vice versa
