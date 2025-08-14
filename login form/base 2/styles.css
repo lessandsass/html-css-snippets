@@ -31,6 +31,16 @@ input:not([type="checkbox"], [type="radio"]) {
     width: 100%;
 }
 
+/* The :has() pseudo-class is used to select elements that contain a certain element.
+   Here we use it to select form groups that contain an element with the class "fine-print".
+   The :has() pseudo-class is part of the CSS Selectors Level 4 specification and is supported by modern browsers.
+   It is not supported by Internet Explorer, but you can use a polyfill if you need to support IE.
+   The syntax is as follows:
+     :has(selector) {
+        styles...
+     }
+   In this case, the selector is ".fine-print", which selects all elements with the class "fine-print".
+   The styles are applied to the .form-group element if it contains an element with the class "fine-print". */
 .form-group:has(.fine-print) {
     grid-column: 1 / -1;
 
