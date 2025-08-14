@@ -19,12 +19,27 @@ form {
 }
 
 input {
-  background: var(--accent);
+  background: var(--surface-2);
   color: var(--text-1);
   border: var(--border);
   border-radius: 16px;
   padding: 1ex 2ex;
-  width: 100%;
+  /* width: 100%; */
+}
+
+input:not([type="checkbox"], [type="radio"]) {
+    width: 100%;
+}
+
+.form-group:has(.fine-print) {
+    grid-column: 1 / -1;
+
+    display: flex;
+    gap: 1ch;
+}
+
+.contact-form button {
+  justify-self: start;
 }
 
 /* general styling */
